@@ -3,49 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Ahumada - Data Analyst & AI Auditor</title>
+    <title>Rafael Ahumada | Data Analyst & AI Auditor</title>
     <style>
-        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: auto; padding: 20px; background-color: #f4f4f4; }
-        header { background: #2c3e50; color: white; padding: 2rem; text-align: center; border-radius: 8px; }
-        .card { background: white; padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #2980b9; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .badge { background: #e74c3c; color: white; padding: 5px 10px; border-radius: 5px; font-size: 0.8em; margin-right: 5px; }
-        .contact-info { font-style: italic; font-size: 0.9em; }
+        :root { --primary: #1a3a5a; --secondary: #2980b9; --bg: #f8f9fa; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); color: #333; margin: 0; padding: 0; }
+        header { background: var(--primary); color: white; padding: 60px 20px; text-align: center; }
+        .container { max-width: 900px; margin: -40px auto 40px; padding: 20px; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        h1 { margin: 0; font-size: 2.5em; letter-spacing: 1px; }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--secondary); padding-bottom: 10px; margin-top: 0; }
+        .badge-container { display: flex; flex-wrap: wrap; gap: 10px; }
+        .badge { background: var(--secondary); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.9em; font-weight: 500; }
+        .project-img { width: 100%; border-radius: 8px; border: 1px solid #ddd; margin: 15px 0; }
+        .contact { font-size: 0.9em; opacity: 0.9; margin-top: 15px; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Rafael Ahumada García</h1>
-    <p>Data Analyst | AI Content Auditor | Periodista</p>
-    <div class="contact-info">Lanzarote, España | rafael.ahumada.garcia@gmail.com</div>
+    <p>Data Analyst | AI Content Auditor | Senior Journalist</p>
+    <div class="contact">Lanzarote, España | rafael.ahumada.garcia@gmail.com</div>
 </header>
 
-<section class="card">
-    <h2>Perfil Profesional</h2>
-    <p>Especialista en análisis de datos y auditoría de modelos de IA. Combino mi formación técnica en Electrónica con el rigor del Periodismo para garantizar datos precisos y contenido de alta calidad.</p>
-</section>
+<div class="container">
+    <div class="card">
+        <h2>Perfil Profesional</h2>
+        <p>Especialista en análisis de datos y auditoría de modelos de IA. Combino mi sólida base técnica en electrónica y sistemas con el rigor informativo del periodismo para garantizar soluciones de datos precisas y éticas.</p>
+    </div>
 
-<section class="card">
-    <h2>Certificaciones Clave</h2>
-    <ul>
-        <li><strong>Google:</strong> Data Analytics Professional Certificate [cite: 19]</li>
-        <li><strong>IBM:</strong> Applied Artificial Intelligence & Data Science Fundamentals [cite: 13, 18]</li>
-        <li><strong>Google:</strong> Fundamentos de Inteligencia Artificial [cite: 10]</li>
-    </ul>
-</section>
+    <div class="card">
+        <h2>Proyecto Destacado: Análisis de Mercado IA 2026</h2>
+        <p>Estudio realizado con <strong>Python</strong> sobre las tendencias de contratación en el sector de la Inteligencia Artificial.</p>
+        <div id="project-placeholder" style="background: #eee; height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 8px; border: 2px dashed #ccc; color: #666;">
+            [Espacio reservado para el gráfico de Python]
+        </div>
+        <p style="font-size: 0.9em; color: #666;">*Análisis técnico de demanda laboral y requisitos lingüísticos en roles de auditoría de modelos.</p>
+    </div>
 
-<section class="card">
-    <h2>Habilidades Técnicas</h2>
-    <span class="badge">Python</span> <span class="badge">SQL</span> <span class="badge">Análisis de Datos</span> 
-    <span class="badge">Auditoría de IA</span> <span class="badge">Soporte Técnico</span> <span class="badge">WordPress</span>
-</section>
+    <div class="card">
+        <h2>Certificaciones</h2>
+        <div class="badge-container">
+            <span class="badge">Google Data Analytics</span>
+            <span class="badge">IBM Applied AI</span>
+            <span class="badge">IBM Data Science Fundamentals</span>
+            <span class="badge">Google AI Foundations</span>
+        </div>
+    </div>
 
-<section class="card">
-    <h2>Experiencia Destacada</h2>
-    <p><strong>Soporte Técnico de Usuarios (Ibermática/UOC):</strong> 6 años resolviendo incidencias complejas y gestionando bases de conocimiento.</p>
-    <p><strong>Consultor Digital Independiente:</strong> Auditoría de modelos de IA para precisión factual y lingüística.</p>
-</section>
+    <div class="card">
+        <h2>Experiencia Clave</h2>
+        <p><strong>Soporte Técnico de Usuarios (Ibermática/UOC):</strong> Gestión de incidencias críticas y bases de conocimiento durante 6 años[cite: 102, 165].</p>
+        <p><strong>Auditoría de Modelos IA (Freelance):</strong> Evaluación de precisión y sesgos en modelos de lenguaje[cite: 84, 85].</p>
+    </div>
+</div>
 
 </body>
 </html>
