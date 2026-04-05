@@ -12,10 +12,12 @@
         .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 30px; }
         h1 { margin: 0; font-size: 2.5em; letter-spacing: 1px; }
         h2 { color: var(--primary); border-bottom: 2px solid var(--secondary); padding-bottom: 10px; margin-top: 0; }
-        .badge-container { display: flex; flex-wrap: wrap; gap: 10px; }
-        .badge { background: var(--secondary); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.9em; font-weight: 500; }
+        .badge-container { display: flex; flex-wrap: wrap; gap: 8px; }
+        .badge { background: #e8f4fd; color: #2980b9; padding: 6px 12px; border-radius: 6px; font-size: 0.85em; font-weight: 600; border: 1px solid #d1e9f9; }
         .project-img { width: 100%; border-radius: 8px; border: 1px solid #ddd; margin: 15px 0; }
         .contact { font-size: 0.9em; opacity: 0.9; margin-top: 15px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
     </style>
 </head>
 <body>
@@ -29,35 +31,57 @@
 <div class="container">
     <div class="card">
         <h2>Perfil Profesional</h2>
-        <p>Especialista en análisis de datos y auditoría de modelos de IA. Combino mi sólida base técnica en electrónica y sistemas con el rigor informativo del periodismo para garantizar soluciones de datos precisas y éticas.</p>
+        <p>Especialista en análisis de datos y auditoría de modelos de IA con más de 20 años de experiencia en comunicación. Certificado por <strong>Google e IBM</strong> en metodologías de Ciencia de Datos, Machine Learning y Periodismo de Datos.</p>
     </div>
 
     <div class="card">
-    <h2>Proyecto Destacado: Auditoría de Veracidad en LLMs (2026)</h2>
-    
-    <p>Análisis técnico comparativo sobre la fiabilidad fáctica de los principales modelos de lenguaje. Utilizando <strong>Python</strong> y librerías de visualización de datos, he procesado los últimos <em>benchmarks</em> globales para identificar riesgos de desinformación y tasas de alucinación.</p>
-    
-    <img src="auditoria_global_ia.png" alt="Gráfico de Auditoría Global IA 2026" class="project-img">
-    
-    <p style="font-size: 0.9em; color: #666; font-style: italic;">
-        *Este estudio permite establecer protocolos de supervisión humana (Human-in-the-loop) basados en la precisión específica de cada arquitectura tecnológica.
-    </p>
-</div>
+        <h2>Proyecto Destacado: Auditoría de Veracidad en LLMs (2026)</h2>
+        <p>Análisis técnico comparativo sobre la fiabilidad fáctica de los principales modelos de lenguaje. Utilizando <strong>Python</strong>, he procesado los últimos benchmarks globales para identificar riesgos de alucinación.</p>
+        <img src="auditoria_global_ia.png" alt="Gráfico de Auditoría Global IA 2026" class="project-img">
+        <p style="font-size: 0.9em; color: #666; font-style: italic;">*Estudio de tasas de error fáctico en arquitecturas propietarias y open-source.</p>
+    </div>
 
     <div class="card">
-        <h2>Certificaciones</h2>
+        <h2>Certificaciones Profesionales</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div>
+                <h3>IBM Professional</h3>
+                <ul style="font-size: 0.9em;">
+                    <li>Fundamentos de Ciencia de Datos</li>
+                    <li>Machine Learning con Python</li>
+                    <li>SQL Aplicado a Data Science</li>
+                    <li>Visualización de Datos con Python</li>
+                    <li>Herramientas de Ciencia de Datos</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Google Initiative & Career</h3>
+                <ul style="font-size: 0.9em;">
+                    <li>Data Analytics Professional Certificate</li>
+                    <li>Crash Course on Python</li>
+                    <li>Periodismo de Datos</li>
+                    <li>Fundamentos de IA (Google AI)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Habilidades Técnicas</h2>
         <div class="badge-container">
-            <span class="badge">Google Data Analytics</span>
-            <span class="badge">IBM Applied AI</span>
-            <span class="badge">IBM Data Science Fundamentals</span>
-            <span class="badge">Google AI Foundations</span>
+            <span class="badge">Python (Data Science)</span>
+            <span class="badge">SQL Aplicado</span>
+            <span class="badge">Machine Learning</span>
+            <span class="badge">Análisis Estadístico</span>
+            <span class="badge">Auditoría de IA</span>
+            <span class="badge">WordPress/WooCommerce</span>
         </div>
     </div>
 
     <div class="card">
         <h2>Experiencia Clave</h2>
-        <p><strong>Soporte Técnico de Usuarios (Ibermática/UOC):</strong> Gestión de incidencias críticas y bases de conocimiento durante 6 años[cite: 102, 165].</p>
-        <p><strong>Auditoría de Modelos IA (Freelance):</strong> Evaluación de precisión y sesgos en modelos de lenguaje[cite: 84, 85].</p>
+        <p><strong>Técnico de Atención a Usuarios (UOC / Ibermática):</strong> 6 años gestionando incidencias críticas y procedimientos administrativos complejos mediante sistemas de ticketing.</p>
+        <p><strong>Periodista e Informador (RNE):</strong> Redacción y locución de informativos, aplicando rigor en la verificación de fuentes y datos.</p>
     </div>
 </div>
 
