@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael Ahumada | AI Content Auditor</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -50,8 +49,8 @@
             </p>
         </div>
         <div class="mt-4 md:mt-0 flex gap-4 font-mono text-sm">
-            <a href="#" class="px-4 py-2 bg-panelBg neon-border text-neonCyan hover:bg-cyan-900/30 transition">GitHub</a>
-            <a href="#" class="px-4 py-2 bg-panelBg neon-border text-neonCyan hover:bg-cyan-900/30 transition">LinkedIn</a>
+            <a href="TU_ENLACE_GITHUB_AQUI" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-panelBg neon-border text-neonCyan hover:bg-cyan-900/30 transition">GitHub</a>
+            <a href="TU_ENLACE_LINKEDIN_AQUI" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-panelBg neon-border text-neonCyan hover:bg-cyan-900/30 transition">LinkedIn</a>
         </div>
     </header>
 
@@ -78,15 +77,78 @@
 
             <div class="bg-panelBg p-6 rounded-lg neon-border flex flex-col justify-center">
                 <h4 class="text-lg font-mono text-neonCyan mb-4 text-center">ESTADO LEGAL (E-E-A-T)</h4>
-                <div id="gaugeChart" class="w-full h-32"></div>
-                <p class="text-center text-xs font-mono text-gray-400 mt-2">Cumplimiento Reglamento IA UE<br><span class="text-white">Agosto 2026</span></p>
+                
+                <div class="w-full mt-2">
+                    <div class="flex justify-between text-xs text-white font-mono mb-1">
+                        <span>Rigor Post-Auditoría</span>
+                        <span class="text-neonCyan">100%</span>
+                    </div>
+                    <div class="w-full bg-gray-800 rounded-full h-4 overflow-hidden border border-gray-700">
+                        <div class="bg-neonCyan h-4 rounded-full shadow-[0_0_10px_#00f3ff]" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <p class="text-center text-xs font-mono text-gray-400 mt-6 pt-4 border-t border-gray-700">Cumplimiento Reglamento IA UE<br><span class="text-white">Agosto 2026</span></p>
             </div>
         </div>
     </section>
 
     <section class="max-w-6xl mx-auto mb-12 bg-panelBg p-6 rounded-lg neon-border">
-        <h3 class="text-xl font-mono text-white mb-4 border-l-4 border-neonCyan pl-3">Análisis de Patrones Sintéticos vs. Intervención Humana</h3>
-        <div id="barChart" class="w-full h-64"></div>
+        <h3 class="text-xl font-mono text-white mb-6 border-l-4 border-neonCyan pl-3">Análisis de Patrones Sintéticos vs. Intervención Humana</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 font-mono text-sm">
+            <div class="space-y-6">
+                <div>
+                    <div class="flex justify-between text-gray-300 mb-2"><span>Muletillas de transición ('Por otro lado')</span></div>
+                    <div class="flex items-center gap-3">
+                        <span class="w-16 text-neonRed font-bold text-right">IA (12)</span>
+                        <div class="flex-1 bg-gray-800 h-4 rounded"><div class="bg-neonRed h-4 rounded shadow-[0_0_8px_#ff003c]" style="width: 80%"></div></div>
+                    </div>
+                    <div class="flex items-center gap-3 mt-2">
+                        <span class="w-16 text-neonCyan font-bold text-right">PAH (0)</span>
+                        <div class="flex-1 bg-gray-800 h-4 rounded"><div class="bg-neonCyan h-4 rounded shadow-[0_0_8px_#00f3ff]" style="width: 0%"></div></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between text-gray-300 mb-2"><span>Estructuras Espejo (Intro-Conclusión)</span></div>
+                    <div class="flex items-center gap-3">
+                        <span class="w-16 text-neonRed font-bold text-right">IA (8)</span>
+                        <div class="flex-1 bg-gray-800 h-4 rounded"><div class="bg-neonRed h-4 rounded shadow-[0_0_8px_#ff003c]" style="width: 60%"></div></div>
+                    </div>
+                    <div class="flex items-center gap-3 mt-2">
+                        <span class="w-16 text-neonCyan font-bold text-right">PAH (0)</span>
+                        <div class="flex-1 bg-gray-800 h-4 rounded"><div class="bg-neonCyan h-4 rounded shadow-[0_0_8px_#00f3ff]" style="width: 0%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <div class="flex justify-between text-gray-300 mb-2"><span>Datos sin fuente trazable</span></div>
+                    <div class="flex items-center gap-3">
+                        <span class="w-16 text-neonRed font-bold text-right">IA (3)</span>
+                        <div class="flex-1 bg-gray-800 h-4 rounded"><div class="bg-neonRed h-4 rounded shadow-[0_0_8px_#ff003c]" style="width: 30%"></div></div>
+                    </div>
+                    <div class="flex items-center gap-3 mt-2">
+                        <span class="w-16 text-neonCyan font-bold text-right">PAH (0)</span>
+                        <div class="flex-1 bg-gray-800 h-4 rounded"><div class="bg-neonCyan h-4 rounded shadow-[0_0_8px_#00f3ff]" style="width: 0%"></div></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between text-gray-300 mb-2"><span>Inyección de Contexto Experto (E-E-A-T)</span></div>
+                    <div class="flex items-center gap-3">
+                        <span class="w-16 text-gray-500 font-bold text-right">IA (0)</span>
+                        <div class="flex-1 bg-gray-800 h-4 rounded"><div class="bg-gray-600 h-4 rounded" style="width: 0%"></div></div>
+                    </div>
+                    <div class="flex items-center gap-3 mt-2">
+                        <span class="w-16 text-neonCyan font-bold text-right">PAH (15)</span>
+                        <div class="flex-1 bg-gray-800 h-4 rounded"><div class="bg-neonCyan h-4 rounded shadow-[0_0_8px_#00f3ff]" style="width: 100%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -138,3 +200,5 @@
         <p>© 2026 Rafael Ahumada García. CV Interactivo. Construido para el rigor humano en la era sintética.</p>
     </footer>
 
+</body>
+</html>
