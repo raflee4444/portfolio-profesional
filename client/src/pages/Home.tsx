@@ -178,13 +178,14 @@ function Servicios() {
     {
       icon: FileText,
       title: "Redacción y Documentación",
-      subtitle: "Capacidad en desarrollo — No experiencia profesional directa",
-      badge: "En desarrollo",
-      badgeColor: "bg-amber-100 text-amber-700",
+      subtitle: "Capacidad real basada en experiencia en comunicación",
+      badge: "Comunicación",
+      badgeColor: "bg-petrol/15 text-petrol",
       description:
-        "Capacidad potencial basada en mi Licenciatura en Periodismo (UAB) y 2 años de experiencia en RNE. No tengo experiencia profesional directa en redacción de contenidos digitales, pero mi formación periodística y mis conocimientos técnicos me permiten desarrollar esta línea.",
+        "Capacidad de redacción basada en Licenciatura en Periodismo (UAB), 2 años de experiencia en Radio Nacional de España y trayectoria en elaboración de contenidos escritos. Experiencia en redacción periodística, con capacidad para documentación clara y estructurada en entornos digitales.",
       features: [
         "Redacción profesional con base periodística",
+        "Elaboración de contenidos informativos y estructurados",
         "Capacidad para documentación de usuario",
         "Gestión básica de WordPress (nivel medio)",
         "Diseño básico con Canva",
