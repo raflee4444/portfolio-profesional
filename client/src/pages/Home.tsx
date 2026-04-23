@@ -1,14 +1,16 @@
 /**
  * Portfolio Profesional - Rafael Ahumada García
  * Diseño: "Consultor de Confianza" — Elegancia Corporativa Moderna
- * Paleta: Blancos cálidos (stone-50), grises profundos (stone-800/900), acento azul petróleo (#0f4c75)
- * Tipografía: DM Sans (cuerpo) + Playfair Display (títulos)
  *
- * CRITERIO DE CONTENIDO:
- * - "30+ años" = trayectoria profesional global, NO experiencia en soporte ni contenidos
- * - Soporte IT = 6 años reales en Ibermática (UOC). Servicio consolidado.
- * - Contenidos técnicos = capacidad en desarrollo basada en periodismo + conocimientos técnicos. NO experiencia acumulada.
- * - Nunca sugerir que toda la experiencia profesional aplica al servicio actual.
+ * CRITERIO DE VERACIDAD (OBLIGATORIO):
+ * - Ibermática (UOC) = soporte funcional a alumnos, NO soporte IT técnico.
+ *   Incidencias técnicas muy básicas (cookies, navegador) de forma ocasional.
+ *   Las incidencias técnicas reales iban al SAI.
+ * - NO se puede usar: "IT", "Helpdesk", "Técnico IT", "Soporte técnico".
+ * - SÍ se puede usar: "Soporte a usuarios", "Atención al usuario",
+ *   "Resolución de incidencias funcionales", "Entorno digital".
+ * - Contenidos = capacidad potencial basada en periodismo. NO experiencia.
+ * - 30+ años = trayectoria profesional global en sectores diversos.
  */
 
 import { motion } from "framer-motion";
@@ -31,7 +33,6 @@ import {
   Briefcase,
   GraduationCap,
   Languages,
-  TrendingUp,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -49,7 +50,6 @@ const staggerContainer = {
 function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0 z-0">
         <img
           src="https://d2xsxph8kpxj0f.cloudfront.net/310519663586264612/jMiriDN6xRZdpwvg32iqR4/hero-bg-bXA8pukqGSxopMksJNS7gY.webp"
@@ -78,21 +78,21 @@ function Hero() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-serif)" }}
           >
-            Soporte Técnico IT
+            Soporte a Usuarios
             <br />
-            <span className="text-stone-300">con base en</span>
+            <span className="text-stone-300">&</span> Comunicación
             <br />
-            <span className="text-amber-300/90">Comunicación Técnica</span>
+            <span className="text-amber-300/90">Profesional</span>
           </motion.h1>
 
           <motion.p
             variants={fadeInUp}
             className="text-lg sm:text-xl text-stone-200 leading-relaxed mb-8 max-w-2xl"
           >
-            Técnico de soporte con 6 años de experiencia real en helpdesk
-            (Ibermática/UOC). Formación en periodismo y conocimientos técnicos
-            que complementan mi perfil con capacidad para documentación y
-            contenidos IT.
+            6 años de experiencia en atención a usuarios y resolución de
+            incidencias funcionales en entorno digital (Ibermática/UOC).
+            Licenciado en Periodismo con capacidad para documentación y
+            redacción profesional.
           </motion.p>
 
           <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
@@ -122,13 +122,12 @@ function Hero() {
             </Button>
           </motion.div>
 
-          {/* Key stats — clarificados */}
           <motion.div
             variants={fadeInUp}
             className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-6"
           >
             {[
-              { value: "6", label: "Años en Soporte IT" },
+              { value: "6", label: "Años en Soporte a Usuarios" },
               { value: "30+", label: "Años de trayectoria profesional" },
               { value: "3", label: "Idiomas" },
               { value: "100%", label: "Remoto" },
@@ -144,7 +143,6 @@ function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -162,36 +160,36 @@ function Servicios() {
   const services = [
     {
       icon: Headphones,
-      title: "Soporte Técnico Remoto",
-      subtitle: "Help Desk Nivel 1 — Servicio consolidado",
-      badge: "Experiencia consolidada",
+      title: "Soporte a Usuarios",
+      subtitle: "Atención al usuario en entorno digital — Servicio consolidado",
+      badge: "Experiencia real",
       badgeColor: "bg-petrol/15 text-petrol",
       description:
-        "6 años de experiencia real como Técnico de Soporte en Ibermática (UOC). Resolución de incidencias, gestión de tickets y atención a usuarios en tres idiomas.",
+        "6 años de experiencia en Ibermática (UOC) atendiendo a usuarios de plataforma educativa: resolución de incidencias funcionales, gestión de tickets y soporte multilingüe. Incidencias técnicas básicas de forma ocasional (navegador, cookies).",
       features: [
-        "Resolución de incidencias de software y hardware",
-        "Gestión de tickets y seguimiento",
-        "Soporte a sistemas operativos Windows",
-        "Asistencia en conectividad de red básica",
-        "Atención al usuario en 3 idiomas (ES/CA/EN)",
+        "Atención a usuarios en plataforma digital",
+        "Resolución de incidencias funcionales",
+        "Gestión de tickets y seguimiento de casos",
+        "Soporte multilingüe (ES/CA/EN)",
+        "Incidencias técnicas básicas ocasionales (navegador, cookies)",
       ],
       image:
         "https://d2xsxph8kpxj0f.cloudfront.net/310519663586264612/jMiriDN6xRZdpwvg32iqR4/service-helpdesk-Ya2f5Nxh5vAFm9zdXpB55E.webp",
     },
     {
       icon: FileText,
-      title: "Contenidos Técnicos",
-      subtitle: "Redacción IT / SaaS — Capacidad en desarrollo",
+      title: "Redacción y Documentación",
+      subtitle: "Capacidad en desarrollo — No experiencia profesional directa",
       badge: "En desarrollo",
       badgeColor: "bg-amber-100 text-amber-700",
       description:
-        "Capacidad basada en mi Licenciatura en Periodismo (UAB), experiencia en RNE y conocimientos técnicos adquiridos. No es experiencia profesional acumulada en este campo, sino una evolución natural de mi perfil.",
+        "Capacidad potencial basada en mi Licenciatura en Periodismo (UAB) y 2 años de experiencia en RNE. No tengo experiencia profesional directa en redacción de contenidos digitales, pero mi formación periodística y mis conocimientos técnicos me permiten desarrollar esta línea.",
       features: [
-        "Redacción técnica con base periodística",
-        "Documentación de usuario y manuales",
-        "Artículos para blogs IT y tecnológicos",
-        "Gestión básica de WordPress",
-        "Diseño de elementos visuales con Canva",
+        "Redacción profesional con base periodística",
+        "Capacidad para documentación de usuario",
+        "Gestión básica de WordPress (nivel medio)",
+        "Diseño básico con Canva",
+        "Nociones de SEO/SEM (nivel básico)",
       ],
       image:
         "https://d2xsxph8kpxj0f.cloudfront.net/310519663586264612/jMiriDN6xRZdpwvg32iqR4/service-content-7xfKYBhD74FnrtZckzHuXY.webp",
@@ -219,14 +217,15 @@ function Servicios() {
             className="text-3xl sm:text-4xl font-bold text-foreground"
             style={{ fontFamily: "var(--font-serif)" }}
           >
-            Qué puedo ofrecer a su empresa
+            Qué puedo ofrecer
           </motion.h2>
           <motion.p
             variants={fadeInUp}
             className="mt-4 text-muted-foreground max-w-2xl mx-auto text-lg"
           >
-            Soporte técnico como servicio principal, complementado con
-            capacidad de redacción y documentación técnica.
+            Atención a usuarios como servicio principal, con capacidad
+            complementaria de redacción y documentación basada en formación
+            periodística.
           </motion.p>
         </motion.div>
 
@@ -293,34 +292,34 @@ function Servicios() {
 function PorQueElegirme() {
   const reasons = [
     {
-      icon: Monitor,
-      title: "6 años en Soporte IT real",
+      icon: Users,
+      title: "6 años en atención a usuarios",
       description:
-        "Experiencia consolidada como Técnico de Soporte en Ibermática (UOC): resolución de incidencias, gestión de tickets y atención remota a usuarios.",
+        "Experiencia real en Ibermática (UOC) atendiendo a usuarios de plataforma educativa: resolución de incidencias funcionales, gestión de tickets y seguimiento de casos.",
     },
     {
       icon: PenTool,
-      title: "Base periodística sólida",
+      title: "Licenciado en Periodismo",
       description:
-        "Licenciatura en Periodismo (UAB) y 2 años en RNE. Esta formación me permite redactar documentación técnica clara, aunque no constituye experiencia profesional en contenidos IT.",
+        "Titulación universitaria (UAB, 2004) y 2 años en RNE. Capacidad de redacción profesional que puede aplicarse a documentación, aunque no constituye experiencia profesional en contenidos digitales.",
     },
     {
       icon: Globe,
       title: "Trilingüe",
       description:
-        "Castellano y Catalán nativos, Inglés B2. Capacidad de soporte y comunicación en tres idiomas.",
+        "Castellano y Catalán nativos, Inglés B2. Atención a usuarios y comunicación en tres idiomas.",
     },
     {
       icon: Shield,
       title: "Trayectoria diversa",
       description:
-        "Más de 30 años de trayectoria profesional en sectores diversos (técnico, comunicación, gestión) que aportan adaptabilidad y visión amplia.",
+        "Más de 30 años de trayectoria profesional en sectores diversos (mantenimiento, comunicación, atención al cliente, gestión) que aportan adaptabilidad.",
     },
     {
-      icon: Users,
-      title: "Orientación al cliente",
+      icon: Monitor,
+      title: "Familiaridad con entornos digitales",
       description:
-        "Experiencia en atención al cliente en múltiples sectores: IT, comercio, fitness y comunicación.",
+        "Experiencia de trabajo con plataformas digitales, herramientas de ticketing y entornos web. Formación complementaria en análisis de datos y fundamentos de IA (Google).",
     },
     {
       icon: Clock,
@@ -394,8 +393,8 @@ function Experiencia() {
       role: "Técnico de Soporte (Frontoffice)",
       company: "Ibermática (UOC)",
       description:
-        "Atención a usuarios, resolución de incidencias online y telefónicas, gestión de tickets y soporte técnico de primer nivel.",
-      tags: ["Soporte IT", "Ticketing", "Atención al usuario"],
+        "Atención a usuarios (alumnos) de la plataforma educativa de la UOC. Resolución de incidencias funcionales por vía online y telefónica. Gestión de tickets. Incidencias técnicas muy básicas de forma ocasional (cookies, navegador). Las incidencias técnicas reales se derivaban al SAI.",
+      tags: ["Soporte a usuarios", "Ticketing", "Incidencias funcionales"],
       highlight: true,
     },
     {
@@ -468,7 +467,7 @@ function Experiencia() {
             className="mt-4 text-muted-foreground max-w-2xl mx-auto"
           >
             Posiciones más relevantes de una trayectoria de más de 30 años en
-            sectores diversos. La experiencia directa en soporte IT corresponde
+            sectores diversos. La experiencia en soporte a usuarios corresponde
             a los 6 años en Ibermática (UOC).
           </motion.p>
         </motion.div>
@@ -483,11 +482,9 @@ function Experiencia() {
               variants={fadeInUp}
               className="relative pl-8 pb-10 last:pb-0"
             >
-              {/* Timeline line */}
               {i < timeline.length - 1 && (
                 <div className="absolute left-[11px] top-3 bottom-0 w-px bg-border" />
               )}
-              {/* Timeline dot */}
               <div
                 className={`absolute left-0 top-1.5 w-[23px] h-[23px] rounded-full border-[3px] ${
                   item.highlight
@@ -512,7 +509,7 @@ function Experiencia() {
                   </span>
                   {item.highlight && (
                     <span className="text-xs px-2.5 py-0.5 rounded-full bg-petrol/15 text-petrol font-medium">
-                      Soporte IT directo
+                      Soporte a usuarios
                     </span>
                   )}
                 </div>
@@ -572,7 +569,6 @@ function Formacion() {
         </motion.div>
 
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-          {/* Títulos oficiales */}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -608,7 +604,6 @@ function Formacion() {
             </div>
           </motion.div>
 
-          {/* Certificaciones */}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -629,7 +624,7 @@ function Formacion() {
                 "Certificado en Fundamentos de IA (Google)",
                 "Certificado en Análisis de Datos (Google)",
                 "Cursos de Python y Bases de Datos (SQL)",
-                "Cisco IT Essentials (formación completada)",
+                "Cisco IT Essentials (formación completada, sin certificación oficial)",
                 "Introducción a Habilidades en Análisis de Datos",
               ].map((cert) => (
                 <div key={cert} className="flex items-start gap-2.5">
@@ -649,12 +644,12 @@ function Formacion() {
 function Habilidades() {
   const skillGroups = [
     {
-      icon: Briefcase,
-      title: "Soporte IT (Experiencia profesional)",
+      icon: Users,
+      title: "Soporte a Usuarios (Experiencia)",
       skills: [
-        { name: "Sistemas de ticketing", level: "Medio" },
-        { name: "Sistemas Operativos (Windows)", level: "Medio" },
-        { name: "Redes básicas", level: "Medio" },
+        { name: "Atención a usuarios en plataforma digital", level: "Medio" },
+        { name: "Herramientas de ticketing", level: "Medio" },
+        { name: "Resolución de incidencias funcionales", level: "Medio" },
       ],
     },
     {
@@ -716,7 +711,7 @@ function Habilidades() {
             className="text-3xl sm:text-4xl font-bold text-foreground"
             style={{ fontFamily: "var(--font-serif)" }}
           >
-            Habilidades técnicas e idiomas
+            Habilidades e idiomas
           </motion.h2>
           <motion.p
             variants={fadeInUp}
@@ -805,15 +800,15 @@ function Contacto() {
             className="text-3xl sm:text-4xl font-bold mb-6"
             style={{ fontFamily: "var(--font-serif)" }}
           >
-            Hablemos de su proyecto
+            Hablemos
           </motion.h2>
           <motion.p
             variants={fadeInUp}
             className="text-stone-300 text-lg mb-12 leading-relaxed"
           >
-            Disponible principalmente para soporte técnico remoto. También puedo
-            colaborar en tareas de documentación técnica y gestión de contenidos
-            web como servicio complementario.
+            Disponible para posiciones de atención a usuarios y soporte
+            funcional en entorno digital. También puedo colaborar en tareas de
+            redacción y documentación como servicio complementario.
           </motion.p>
 
           <motion.div
@@ -927,7 +922,6 @@ function Navbar() {
             Contactar
           </Button>
         </div>
-        {/* Mobile menu button */}
         <Button
           variant="ghost"
           size="sm"
