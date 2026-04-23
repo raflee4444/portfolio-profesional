@@ -19,7 +19,6 @@ import {
   FileText,
   Globe,
   Mail,
-  Phone,
   Linkedin,
   ChevronDown,
   Monitor,
@@ -813,7 +812,7 @@ function Contacto() {
 
           <motion.div
             variants={staggerContainer}
-            className="grid sm:grid-cols-3 gap-6 mb-12"
+            className="grid sm:grid-cols-2 gap-6 mb-12 max-w-lg mx-auto"
           >
             {[
               {
@@ -823,16 +822,10 @@ function Contacto() {
                 href: "mailto:rafael.ahumada@gmail.com",
               },
               {
-                icon: Phone,
-                label: "Teléfono",
-                value: "+34 600 000 000",
-                href: "tel:+34600000000",
-              },
-              {
                 icon: Linkedin,
                 label: "LinkedIn",
                 value: "Ver perfil",
-                href: "https://linkedin.com/in/rafaelahumada",
+                href: "https://www.linkedin.com/in/rafael-a-0b889626",
               },
             ].map((contact) => (
               <motion.a
