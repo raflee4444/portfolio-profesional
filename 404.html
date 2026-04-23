@@ -1,22 +1,22 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="es">
+
   <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <script type="text/javascript">
-      // SPA redirect for GitHub Pages
-      // Converts the path to a query string so the SPA can handle routing
-      var pathSegmentsToKeep = 1; // Keep /portfolio-profesional/
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
-    </script>
-  </head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Rafael Ahumada | Soporte a Usuarios & Comunicación Profesional</title>
+    <meta name="description" content="Profesional con 6 años de experiencia en soporte a usuarios (Ibermática/UOC). Licenciado en Periodismo. Trayectoria de más de 30 años en sectores diversos. Disponible para trabajo remoto." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/portfolio-profesional/assets/index-DcgzBDq4.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio-profesional/assets/index-C1bsuAkA.css">
+    </head>
+
   <body>
-  </body>
+    <div id="root"></div>
+    </body>
+
 </html>
