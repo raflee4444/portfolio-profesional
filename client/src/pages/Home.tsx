@@ -77,21 +77,22 @@ function Hero() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-serif)" }}
           >
-            Soporte a Usuarios
+            Soporte digital,
             <br />
-            <span className="text-stone-300">&</span> Comunicación
+            redacción
             <br />
-            <span className="text-amber-300/90">Profesional</span>
+            <span className="text-amber-300/90">y revisión lingüística</span>
           </motion.h1>
 
           <motion.p
             variants={fadeInUp}
             className="text-lg sm:text-xl text-stone-200 leading-relaxed mb-8 max-w-2xl"
           >
-            6 años de experiencia en atención a usuarios y resolución de
-            incidencias funcionales en entorno digital (Ibermática/UOC).
-            Licenciado en Periodismo con capacidad para documentación y
-            redacción profesional.
+            6 años de experiencia en atención a usuarios y gestión de incidencias 
+            funcionales en entorno digital (Ibermática/UOC). Licenciado en Periodismo, 
+            con experiencia en redacción, documentación de usuario y comunicación escrita. 
+            Formación complementaria en tecnología, datos e IA aplicada a tareas de 
+            revisión y clasificación de contenidos. Disponible para trabajo remoto.
           </motion.p>
 
           <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
@@ -126,10 +127,10 @@ function Hero() {
             className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-6"
           >
             {[
-              { value: "6", label: "Años en Soporte a Usuarios" },
-              { value: "30+", label: "Años de trayectoria profesional" },
-              { value: "3", label: "Idiomas" },
-              { value: "100%", label: "Remoto" },
+              { value: "6", label: "Años en atención a usuarios" },
+              { value: "Periodismo y redacción", label: "Formación principal" },
+              { value: "ES/CA · EN B2", label: "Idiomas" },
+              { value: "Disponible", label: "Remoto" },
             ].map((stat) => (
               <div key={stat.label} className="text-center sm:text-left">
                 <div className="text-2xl sm:text-3xl font-bold text-white">
@@ -158,38 +159,58 @@ function Hero() {
 function Servicios() {
   const services = [
     {
+      icon: FileText,
+      title: "Comunicación, Redacción y Documentación",
+      subtitle: "Capacidad basada en formación periodística y experiencia en comunicación",
+      badge: "Comunicación",
+      badgeColor: "bg-petrol/15 text-petrol",
+      description:
+        "Licenciado en Periodismo (UAB, 2004) con 2 años de experiencia en Radio Nacional de España. Capacidad de redacción profesional, síntesis de contenidos, documentación de usuario clara y estructurada en entornos digitales. Experiencia en elaboración de contenidos informativos y documentación funcional.",
+      features: [
+        "Redacción profesional con base periodística",
+        "Documentación de usuario y documentación funcional",
+        "Síntesis y estructuración de contenidos",
+        "Elaboración de contenidos informativos",
+        "Capacidad de revisión y corrección de textos",
+        "Familiaridad con WordPress y publicación de contenidos",
+      ],
+      image:
+        "https://d2xsxph8kpxj0f.cloudfront.net/310519663586264612/jMiriDN6xRZdpwvg32iqR4/service-content-7xfKYBhD74FnrtZckzHuXY.webp",
+    },
+    {
       icon: Headphones,
-      title: "Soporte a Usuarios",
-      subtitle: "Atención al usuario en entorno digital — Servicio consolidado",
+      title: "Soporte Digital Escrito y Atención a Usuarios",
+      subtitle: "Experiencia real en atención a usuarios en plataforma educativa digital",
       badge: "Experiencia real",
       badgeColor: "bg-petrol/15 text-petrol",
       description:
-        "6 años de experiencia en Ibermática (UOC) atendiendo a usuarios de plataforma educativa: resolución de incidencias funcionales, gestión de tickets y soporte multilingüe. Incidencias técnicas básicas de forma ocasional (navegador, cookies).",
+        "6 años de experiencia en Ibermática (UOC) atendiendo a usuarios de plataforma educativa: resolución de incidencias funcionales, gestión de tickets y soporte multilingüe. Especializado en atención por vía escrita (email, chat, tickets). Incidencias técnicas muy básicas de forma ocasional (navegador, cookies). Las incidencias técnicas reales se derivaban al equipo especializado (SAI).",
       features: [
         "Atención a usuarios en plataforma digital",
         "Resolución de incidencias funcionales",
         "Gestión de tickets y seguimiento de casos",
         "Soporte multilingüe (ES/CA/EN)",
+        "Comunicación escrita clara y profesional",
         "Incidencias técnicas básicas ocasionales (navegador, cookies)",
       ],
       image:
         "https://d2xsxph8kpxj0f.cloudfront.net/310519663586264612/jMiriDN6xRZdpwvg32iqR4/service-helpdesk-Ya2f5Nxh5vAFm9zdXpB55E.webp",
     },
     {
-      icon: FileText,
-      title: "Redacción y Documentación",
-      subtitle: "Capacidad real basada en experiencia en comunicación",
-      badge: "Comunicación",
+      icon: Globe,
+      title: "Lenguaje, Revisión e IA Aplicada",
+      subtitle: "Formación complementaria en evaluación de contenido y tareas lingüísticas",
+      badge: "Formación complementaria",
       badgeColor: "bg-petrol/15 text-petrol",
       description:
-        "Capacidad de redacción basada en Licenciatura en Periodismo (UAB), 2 años de experiencia en Radio Nacional de España y trayectoria en elaboración de contenidos escritos. Experiencia en redacción periodística, con capacidad para documentación clara y estructurada en entornos digitales.",
+        "Formación complementaria en IA, datos y automatización, orientada a tareas estructuradas de revisión, clasificación y evaluación de contenidos. Especialmente aplicable a proyectos lingüísticos en español y catalán. Capacidad para anotación de datos, transcripción y revisión de contenidos. No se presenta como experiencia profesional en análisis de datos, programación o consultoría IA.",
       features: [
-        "Redacción profesional con base periodística",
-        "Elaboración de contenidos informativos y estructurados",
-        "Capacidad para documentación de usuario",
-        "Gestión básica de WordPress (nivel medio)",
-        "Diseño básico con Canva",
-        "Nociones de SEO/SEM (nivel básico)",
+        "Evaluación y clasificación de contenido",
+        "Revisión lingüística y calidad de textos",
+        "Anotación de datos para IA",
+        "Transcripción y revisión ES/CAT",
+        "Tareas de calidad lingüística",
+        "Formación en fundamentos de IA (Google)",
       ],
       image:
         "https://d2xsxph8kpxj0f.cloudfront.net/310519663586264612/jMiriDN6xRZdpwvg32iqR4/service-content-7xfKYBhD74FnrtZckzHuXY.webp",
@@ -223,9 +244,8 @@ function Servicios() {
             variants={fadeInUp}
             className="mt-4 text-muted-foreground max-w-2xl mx-auto text-lg"
           >
-            Atención a usuarios como servicio principal, con capacidad
-            complementaria de redacción y documentación basada en formación
-            periodística.
+            Tres vías profesionales: comunicación y redacción, soporte digital 
+            escrito, y revisión lingüística aplicada a IA.
           </motion.p>
         </motion.div>
 
@@ -295,31 +315,31 @@ function PorQueElegirme() {
       icon: Users,
       title: "6 años en atención a usuarios",
       description:
-        "Experiencia real en Ibermática (UOC) atendiendo a usuarios de plataforma educativa: resolución de incidencias funcionales, gestión de tickets y seguimiento de casos.",
+        "Experiencia real en Ibermática (UOC) atendiendo a usuarios de plataforma educativa: resolución de incidencias funcionales, gestión de tickets y seguimiento de casos. Especializado en comunicación escrita.",
     },
     {
       icon: PenTool,
       title: "Licenciado en Periodismo",
       description:
-        "Titulación universitaria (UAB, 2004) y 2 años en RNE. Capacidad de redacción profesional que puede aplicarse a documentación, aunque no constituye experiencia profesional en contenidos digitales.",
+        "Titulación universitaria (UAB, 2004) y 2 años en Radio Nacional de España. Base sólida para redacción profesional, documentación de usuario y comunicación estructurada.",
     },
     {
-      icon: Globe,
-      title: "Trilingüe",
+      icon: Languages,
+      title: "ES/CA nativos · Inglés B2",
       description:
-        "Castellano y Catalán nativos, Inglés B2. Atención a usuarios y comunicación en tres idiomas.",
+        "Castellano y Catalán nativos, Inglés B2. Atención a usuarios y comunicación profesional en tres idiomas.",
     },
     {
       icon: Shield,
-      title: "Trayectoria diversa",
+      title: "Trayectoria profesional diversa",
       description:
-        "Más de 30 años de trayectoria profesional en sectores diversos (mantenimiento, comunicación, atención al cliente, gestión) que aportan adaptabilidad.",
+        "Más de 30 años de experiencia en comunicación, atención a usuarios y gestión en sectores diversos. Aporta adaptabilidad, comprensión de contextos organizacionales y capacidad de aprendizaje rápido.",
     },
     {
       icon: Monitor,
       title: "Familiaridad con entornos digitales",
       description:
-        "Experiencia de trabajo con plataformas digitales, herramientas de ticketing y entornos web. Formación complementaria en análisis de datos y fundamentos de IA (Google).",
+        "Experiencia de trabajo con plataformas digitales, herramientas de ticketing y entornos web. Formación complementaria en fundamentos de tecnología y datos.",
     },
     {
       icon: Clock,
@@ -390,21 +410,21 @@ function Experiencia() {
     {
       period: "2011 – 2017",
       duration: "6 años",
-      role: "Técnico de Soporte (Frontoffice)",
+      role: "Atención a usuarios y gestión de incidencias funcionales",
       company: "Ibermática (UOC)",
       description:
-        "Atención a usuarios (alumnos) de la plataforma educativa de la UOC. Resolución de incidencias funcionales por vía online y telefónica. Gestión de tickets. Incidencias técnicas muy básicas de forma ocasional (cookies, navegador). Las incidencias técnicas reales se derivaban al SAI.",
-      tags: ["Soporte a usuarios", "Ticketing", "Incidencias funcionales"],
+        "Atención a usuarios (alumnos) de la plataforma educativa de la UOC. Resolución de incidencias funcionales por vía online y email. Gestión de tickets y seguimiento de casos. Soporte multilingüe (ES/CA/EN). Incidencias técnicas muy básicas de forma ocasional (cookies, navegador). Las incidencias técnicas reales se derivaban al SAI (equipo especializado).",
+      tags: ["Soporte a usuarios", "Ticketing", "Incidencias funcionales", "Email support"],
       highlight: true,
     },
     {
       period: "1994 – 2005",
       duration: "11 años",
-      role: "Técnico de Mantenimiento",
-      company: "Meysh (SEAT Zona Franca)",
+      role: "Trayectoria profesional previa en entorno técnico-industrial",
+      company: "Meysh (SEAT Zona Franca) y otros",
       description:
-        "Mantenimiento integral de sistemas CCTV y baja tensión en entorno industrial.",
-      tags: ["CCTV", "Baja tensión", "Mantenimiento"],
+        "Trayectoria profesional previa en entorno técnico-industrial. Etapa anterior a la orientación actual hacia comunicación, soporte digital y tareas lingüísticas.",
+      tags: ["Trayectoria previa", "Entorno técnico-industrial"],
       highlight: false,
     },
     {
@@ -423,8 +443,8 @@ function Experiencia() {
       role: "Entrenador Personal / Crossfit",
       company: "Freelance / Centro",
       description:
-        "Planes personalizados, recepción y asesoramiento al cliente. Gestión de relaciones y fidelización.",
-      tags: ["Atención al cliente", "Gestión", "Asesoramiento"],
+        "Planes personalizados, recepción y asesoramiento al cliente. Gestión de relaciones y fidelización. Experiencia en atención a usuarios y comunicación personalizada.",
+      tags: ["Atención a usuarios", "Gestión", "Asesoramiento"],
       highlight: false,
     },
     {
@@ -433,8 +453,8 @@ function Experiencia() {
       role: "Gerente y Propietario",
       company: "Diablote Fit",
       description:
-        "Gestión integral de tienda física y online: marketing, inventario, proveedores y atención al cliente.",
-      tags: ["Gestión", "Marketing", "E-commerce"],
+        "Gestión integral de tienda física y online: marketing, inventario, proveedores y atención a usuarios. Experiencia en gestión, comunicación y atención a usuarios.",
+      tags: ["Gestión", "Marketing", "E-commerce", "Atención a usuarios"],
       highlight: false,
     },
   ];
@@ -644,30 +664,21 @@ function Formacion() {
 function Habilidades() {
   const skillGroups = [
     {
+      icon: PenTool,
+      title: "Comunicación y Redacción (Experiencia)",
+      skills: [
+        { name: "Redacción profesional con base periodística", level: "Medio" },
+        { name: "Documentación de usuario y documentación funcional", level: "Medio" },
+        { name: "Síntesis y estructuración de contenidos", level: "Medio" },
+      ],
+    },
+    {
       icon: Users,
       title: "Soporte a Usuarios (Experiencia)",
       skills: [
         { name: "Atención a usuarios en plataforma digital", level: "Medio" },
+        { name: "Gestión de incidencias funcionales", level: "Medio" },
         { name: "Herramientas de ticketing", level: "Medio" },
-        { name: "Resolución de incidencias funcionales", level: "Medio" },
-      ],
-    },
-    {
-      icon: PenTool,
-      title: "Diseño y Web (Conocimientos)",
-      skills: [
-        { name: "WordPress", level: "Medio" },
-        { name: "Canva", level: "Básico" },
-        { name: "SEO/SEM", level: "Básico" },
-      ],
-    },
-    {
-      icon: Monitor,
-      title: "Análisis de Datos (Solo formación)",
-      skills: [
-        { name: "Python", level: "Básico" },
-        { name: "SQL", level: "Básico" },
-        { name: "Google Analytics", level: "Básico" },
       ],
     },
     {
@@ -806,9 +817,10 @@ function Contacto() {
             variants={fadeInUp}
             className="text-stone-300 text-lg mb-12 leading-relaxed"
           >
-            Disponible para posiciones de atención a usuarios y soporte
-            funcional en entorno digital. También puedo colaborar en tareas de
-            redacción y documentación como servicio complementario.
+            Disponible para posiciones de atención a usuarios, soporte funcional 
+            en entorno digital, redacción y documentación de usuario. También puedo 
+            colaborar en evaluación de contenido y revisión lingüística aplicada 
+            a IA.
           </motion.p>
 
           <motion.div
@@ -868,7 +880,7 @@ function Contacto() {
               Inglés B2
             </span>
             <span className="px-3 py-1.5 rounded-full border border-white/10">
-              100% Remoto
+              Disponible remoto
             </span>
           </motion.div>
         </motion.div>
