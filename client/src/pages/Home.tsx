@@ -613,14 +613,7 @@ function Formacion() {
                   Universidad Autónoma de Barcelona (2004)
                 </p>
               </div>
-              <div className="border-t border-border pt-5">
-                <p className="font-semibold text-foreground">
-                  FP en Electrónica-Electricidad
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  C.P. Villar (1989)
-                </p>
-              </div>
+
             </div>
           </motion.div>
 
@@ -644,8 +637,6 @@ function Formacion() {
                 "Certificado en Fundamentos de IA (Google)",
                 "Certificado en Análisis de Datos (Google)",
                 "Cursos de Python y Bases de Datos (SQL)",
-                "Cisco IT Essentials (formación completada, sin certificación oficial)",
-                "Introducción a Habilidades en Análisis de Datos",
               ].map((cert) => (
                 <div key={cert} className="flex items-start gap-2.5">
                   <CheckCircle className="h-4 w-4 text-petrol mt-0.5 shrink-0" />
