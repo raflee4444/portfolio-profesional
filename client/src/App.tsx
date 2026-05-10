@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 
 // Detect base path from Vite config (set during build with --base flag)
 // In dev: "" (empty), in GitHub Pages: "/portfolio-profesional"
-const BASE_PATH = import.meta.env.BASE_URL?.replace(/\/$/, "") || "";
+const BASE_PATH = "/portfolio-profesional";
 
 function AppRoutes() {
   return (
